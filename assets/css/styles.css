@@ -13,12 +13,14 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1,
@@ -37,6 +39,9 @@ h1 {
 
 h2 {
     font-size: 5.5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 h3 {
@@ -59,6 +64,10 @@ a {
     text-decoration: none;
 }
 
+p{
+    margin-bottom: 3rem;
+}
+
 .main-bg {
     background-image: url('../img/main-bg.svg');
     background-size: cover;
@@ -68,8 +77,7 @@ a {
 
 .white-bg {
     background-color: var(--white-color);
-    background-size: cover;
-    background-position: center center;
+    color: var(--primary-color);
 }
 
 .main-content {
@@ -84,11 +92,12 @@ a {
 
 .menu {
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     left: 0;
     width: 100%;
-    border-bottom: 0.1rem solid var(--light-gray-color);
+    border-bottom: 0.2rem solid var(--light-gray-color);
 }
 
 .menu-content {
@@ -134,4 +143,39 @@ a {
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+.menu-spacing{
+    height: 6.5rem;
+}
+
+.intro-content{
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-content{
+    max-width: 64rem;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+@media (max-width: 1100px){
+    .intro-text-content h2{
+        font-size: 4rem;
+    }
 }
