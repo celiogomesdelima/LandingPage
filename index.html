@@ -14,16 +14,20 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="Close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#" target="_self">LOGO</a></h1>
+            <h1><a href="#" target="_self" onclick="getElementById('close-menu').checked = false">LOGO</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#top3">Top 3</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#top3-jobs">Jobs</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#recent">Recent Jobs</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,6 +60,172 @@
                 overview of various other improvements that are in the pipeline.</p>
         </div>
     </section>
+    <section id="top3-jobs" class="top3-jobs-grid main-bg section-default">
+        <div class="top3-jobs-content main-content">
+            <h2 class="grid-main-heading">top 3 jobs</h2>
+            <p class="grid-description">Here are some top works.</p>
+            <div class="grid">
+
+                <article>
+                    <h3>First</h3>
+                    <p>This button would add a box to the row of key content boxes below the intro text. This should put
+                        the box there regardless of where the user is currently writing.</p>
+                </article>
+                <article>
+                    <h3>Another site</h3>
+                    <p>I'd suggest having a popup that asks where in the row to insert the box (at the beginning or
+                        end), what title to give the box, what text to put in the box, and where the box should link to.
+                        The entire box should serve as a link to the destination page.</p>
+                </article>
+                <article>
+                    <h3>Third one</h3>
+                    <p>You can also include a type attribute containing the MIME type of the resource, so a browser can
+                        quickly see what resources are on offer, and ignore ones that it doesn’t support.</p>
+                </article>
+            </div>
+    </section>
+    <section id="gallery" class="top3-jobs-grid white-bg section-default">
+        <div class="top3-jobs-content main-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">See some photos in our Gallery</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360?1"
+                        alt="Imagem aleatória gerada pelo site https://picsum.photos">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360?2"
+                        alt="Imagem aleatória gerada pelo site https://picsum.photos">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360?3"
+                        alt="Imagem aleatória gerada pelo site https://picsum.photos">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360?4"
+                        alt="Imagem aleatória gerada pelo site https://picsum.photos">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360?5"
+                        alt="Imagem aleatória gerada pelo site https://picsum.photos">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360?6"
+                        alt="Imagem aleatória gerada pelo site https://picsum.photos">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recent" class="top3-jobs-grid main-bg section-default">
+        <div class="top3-jobs-content main-content">
+            <h2 class="grid-main-heading">Recent jobs</h2>
+            <p class="grid-description">Here are some recent work.</p>
+            <div class="grid">
+
+                <article>
+                    <h3>A good one</h3>
+                    <p>
+                        The technology sector offers some of the best jobs in the world, blending innovation, growth,
+                        and lucrative opportunities. These positions often come with competitive salaries and flexible
+                        work options.</p>
+                </article>
+                <article>
+                    <h3>Great job</h3>
+                    <p>Roles like software engineer, data scientist, cybersecurity analyst, and cloud architect are in
+                        high demand due to the rapid pace of digital transformation across industries.</p>
+                </article>
+                <article>
+                    <h3>The best</h3>
+                    <p> Moreover, the continuous evolution of areas such as artificial intelligence, machine learning,
+                        and blockchain ensures that professionals in tech have countless opportunities for career
+                        development and impact..</p>
+                </article>
+            </div>
+    </section>
+    <section id="pricing" class="white-bg section-default">
+        <div class="main-content top3-content">
+            <h2>Pricing</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
+                some surprises at the machine’s performance. This post details some background information on the
+                experience of porting Firefox to run natively on these CPUs.</p>
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+                    <thead>
+                        <tr>
+                            <th>Product 1</th>
+                            <th>Product 2</th>
+                            <th>Product 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td colspan="3">Observations</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="intro main-bg section-default">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Contact</h2>
+                <p>Feel free to get in touch! Whether you have questions, need assistance, or want to collaborate, I'm here to help. You can reach me by filling out the contact form below, sending an email, or connecting through my social media channels. I'll respond as soon as possible!</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/undraw_connected_world_wuay.svg"
+                    alt="Três pessoas com os logotipos do Javascript, HTML5 e CSS3">
+                </div>
+                <div class="contact-form">
+                    <fieldset class="form-grid">
+                        <legend>Contact me</legend>
+                        <div class="form-group">
+                            <label for="first-name">First name:</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last name:</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Your best e-mail">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Message:</label>
+                            <textarea name="email" id="email" cols="50" rows="10" placeholder="Type here your message"></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </fieldset>
+                </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer white-bg">
+        <p>Feito com <span id="heart">❤</span> por <a href="#" rel= "nofollow" target="_self">Célio Gomes</a></p>
+    </footer>
+    <a href="#" class="back-to-top">❯</a>
 </body>
 
 </html>
